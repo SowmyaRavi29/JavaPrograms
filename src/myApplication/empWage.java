@@ -37,10 +37,10 @@ public class empWage {
      System.out.println("Enter Employee Status ");
      System.out.println("1.Full Time");
      System.out.println("2.Part Time");
-     System.out.println("3.Mark Attendance");
-     System.out.println("4.Check Attendance");
-     System.out.println("5.Monthly Wage Calculation");
-     System.out.println("6. Exit");
+    // System.out.println("3.Mark Attendance");
+     System.out.println("3.Check Attendance");
+     System.out.println("4.Monthly Wage Calculation");
+     System.out.println("5. Exit");
      int empstatus = sc.nextInt();
 
      switch(empstatus){
@@ -217,7 +217,7 @@ public class empWage {
              System.out.println("Total Monthly Wage : ₹" + totalWage);
              break;
 
-         case 6:
+         case 5:
              System.out.println("Exiting the program");
              sc.close();
              return;
