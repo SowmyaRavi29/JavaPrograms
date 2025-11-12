@@ -1,30 +1,27 @@
 package myApplication;
 
-import java.util.Objects;
-import java.util.Random;
-import java.util.Scanner;
-import java.util.HashSet;
+import java.util.*;
 
-/*class Employee{
-    String name;
-    boolean isPresent;
+public class empWagrCompany {
 
-    Employee(String name){
-        this.name = name;
-    }
-
-    void markAttendance(){
-        Random random = new Random();
-        isPresent  = random.nextInt(2)==1;
-    }
-
-    void displayAttendance(){
-        String status = isPresent ? "Present" : "Absent";
-        System.out.println(name+" is "+status);
-    }
-}*/
-public class empWage {
     public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter company name: ");
+        String company = sc.nextLine();
+
+        WageCalculator wc = new WageCalculator();
+        wc.calculate(company);
+    }
+}
+
+class WageCalculator {
+
+    public void calculate(String companyName) {
+
+        System.out.println("Calculating wage for: " + companyName);
+
+
         int fullDayHour = 8;
         int wagePerHour = 20;
         int partTimeHr = 8;
@@ -234,5 +231,6 @@ public class empWage {
      }
  }
 
+    
     }
 }
